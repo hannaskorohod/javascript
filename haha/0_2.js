@@ -1,9 +1,7 @@
-function theorem(a,b,c){
- if (a*a + b*b == c*c){
- 	console.log(true);
- }else{
- 	console.log(false);
- }
-};
- theorem(3,4,5);
+function myTheorem(a, b){
+	var c = (a*a) + (b*b);
+	var result = Math.sqrt(c);
+	console.log(result);
+}
+myTheorem(6,8);
 
