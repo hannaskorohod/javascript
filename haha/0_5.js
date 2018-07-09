@@ -1,16 +1,16 @@
-var currencyExchange = {
-	fromUsd: function(usd,uah){
-		uah = 25.99;
-		fromUsd = prompt("Введите сумму в usd"); 
-		var result = fromUsd * uah;
-		alert(result + " uah");
-		},
-	fromUah: function(usd,uah){
-		usd = 25.99;
-		fromUah = prompt("Введите сумму в uah"); 
-		var result = fromUah / usd;
-		alert(result + " usd");
+function converter(amount, convertFrom, convertTo){
+	var usdToUah =  26.24;
+	var uahToUsd =  0.038;
+	var result = 0;
+
+	if(convertFrom == "usd" &&  convertTo == "uah"){
+		result = amount * usdToUah;
+	} else if (convertFrom == "uah" &&  convertTo == "usd"){
+		result = amount * uahToUsd;
 	}
+	console.log(amount + " " + convertFrom + " = " + result + convertTo);
+
+	
 }
-currencyExchange.fromUsd();
-currencyExchange.fromUah();
+converter(100, "usd", "uah");
+converter(1700, "uah", "usd");
