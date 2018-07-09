@@ -8,9 +8,8 @@ function converter(amount, convertFrom, convertTo){
 	} else if (convertFrom == "uah" &&  convertTo == "usd"){
 		result = amount * uahToUsd;
 	}
-	console.log(amount + " " + convertFrom + " = " + result + convertTo);
-
-	
+	console.log(amount + " " + convertFrom + " = " + result + convertTo);	
 }
+
 converter(100, "usd", "uah");
 converter(1700, "uah", "usd");
