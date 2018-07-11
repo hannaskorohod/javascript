@@ -1,6 +1,6 @@
-var star = "*";
-var sum = "";
-for (var i = 0; i < 5; i++) {
-	var sum = sum + star;
-	console.log(sum)
+var star = '*';
+
+for(i = 0; i < 5; i++){
+star = star + '*';
+console.log(star);
 }
