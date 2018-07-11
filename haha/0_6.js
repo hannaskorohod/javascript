@@ -1,6 +1,5 @@
-var star = '*';
-sum ='';
+var star = '';
 for(i = 0; i < 5; i++){
-sum += star;
-console.log(sum);
+star += "*";
+console.log(star);
 }
