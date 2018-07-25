@@ -6,5 +6,4 @@ for(i=0; i < n.length; i++){
 }}
 return myArr;
 }
-
 combStr('dog');
